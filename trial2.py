@@ -10,6 +10,7 @@ from textblob import TextBlob
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('stopwords')
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
