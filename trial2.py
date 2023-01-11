@@ -8,6 +8,7 @@ Created on Mon Jan  9 19:49:53 2023
 import streamlit as st
 from textblob import TextBlob
 import nltk
+nltk.download('punkt')
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
