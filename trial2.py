@@ -43,7 +43,7 @@ def main():
             for words in words:
                 if not words in stopwords.words('english'):
                     clean_data.append(words)
-            lemma = [wnl.lemmatize(word) for word in clean_data]
+            lemma = [wnl.lemmatize(word) for word in clean_data if word.isalnum()]
             result = {"result":"\n".join(lemma,)}
             result = {key: value for key, value in result.items()}
             res = result['result']
